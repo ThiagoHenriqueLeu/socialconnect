@@ -19,8 +19,6 @@ e sua documentação.
 | 02/10/2026 | A1 | Codex (OpenAI) | Documente os endpoints no Swagger com exemplos de entrada, respostas e códigos HTTP. Atualize o README com instruções de execução. | Implementação das anotações OpenAPI e atualização da documentação. |
 | 02/10/2026 | A1 | Codex (OpenAI) | Crie testes unitários com Mockito e testes de integração com PostgreSQL 17 via Testcontainers. Valide o CRUD, nomes duplicados e estoque negativo. | Criação e execução dos testes automatizados, incluindo os cenários de sucesso e erro. |
 
-## Verificação e revisão
-
 ## Exemplos de prompts para o simulado
 
 O projeto é utilizado como simulado, conforme informado pelo aluno. Os prompts
