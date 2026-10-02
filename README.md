@@ -143,8 +143,9 @@ migrations já aplicadas em outros ambientes existentes.
 
 ## Entrega
 
-Publicação será feita depois da revisão local, conforme solicitado.
-O enunciado pede repositório público e branch `avalicao1` (grafia original),
-commits Conventional Commits, compilação e Swagger funcionando.
-Exemplo: `feat(produtos): implementa CRUD e validações de estoque`.
+Repositório público: https://github.com/ThiagoHenriqueLeu/socialconnect
+
+Branch da atividade: [avalicao1](https://github.com/ThiagoHenriqueLeu/socialconnect/tree/avalicao1)
+(grafia indicada no enunciado). Implementação, testes e documentação foram
+registrados em commits Conventional Commits. Envie o link da branch no Teams.
 Consulte `AI_USAGE.md` e `docs/GUIA_A1.md` antes da apresentação.

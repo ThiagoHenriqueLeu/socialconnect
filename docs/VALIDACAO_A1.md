@@ -18,4 +18,5 @@
 - OpenAPI contém as cinco operações, exemplos, paginação e respostas de erro.
 
 As credenciais ficam somente nas variáveis de ambiente do processo.
-O repositório GitHub e a branch da entrega serão preparados depois, a pedido do aluno.
+Repositório público: https://github.com/ThiagoHenriqueLeu/socialconnect
+Branch da entrega: `avalicao1`. Publicado após autorização do aluno.
