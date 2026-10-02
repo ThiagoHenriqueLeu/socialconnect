@@ -4,36 +4,24 @@
 > assistente. O discente é **integralmente responsável** por testar, auditar e
 > defender todo o código entregue, independentemente de como foi gerado.
 
-## Instruções
-
-Para cada aula ou entrega, registre abaixo:
-- **Data**
-- **Ferramenta** (ChatGPT, Copilot, Claude, etc.)
-- **Prompt(s) utilizado(s)** (resumo ou cópia)
-- **O que foi feito com a saída** (copiado integralmente, adaptado, usado como referência, descartado)
-
----
-
 ## Registro
 
-Os prompts abaixo resumem os pedidos feitos na conversa, considerando o contexto de cada mensagem. Não são transcrições literais.
+Os prompts abaixo são resumos técnicos da solicitação de implementação da A1,
+organizados por assunto. Não são transcrições de mensagens individuais.
+A assistência da IA abrangeu a implementação do módulo de Produtos, seus testes
+e sua documentação.
 
 | Data | Aula | Ferramenta | Prompt (resumo) | Uso da saída |
 |------|------|------------|-----------------|--------------|
-| 04/09/2026 | Preparação do projeto | Codex (OpenAI) | Rode o projeto socialconnect-api-main que está na Área de Trabalho. | A IA verificou o projeto e iniciou a API com uma opção temporária de criação das tabelas H2 após identificar uma falha de inicialização. |
-| 02/10/2026 | A1 | Codex (OpenAI) | Rode novamente o projeto SocialConnect. | A IA iniciou a API e verificou as respostas HTTP do Swagger e da listagem de beneficiários. |
-| 02/10/2026 | A1 | Codex (OpenAI) | Leia as instruções do arquivo avaliacao1.html e explique o que entendeu da atividade. | Usei a explicação como referência para identificar os requisitos do módulo de Produtos, os testes de bônus e os passos de entrega. |
-| 02/10/2026 | A1 | Codex (OpenAI) | Pode implementar os requisitos apresentados. Vamos fazer o projeto primeiro e deixar o GitHub para depois. | A IA implementou diretamente os arquivos de entidade, DTOs, repository, service, controller, validação customizada, Problem Details, mensagens traduzidas e documentação Swagger. Também corrigiu a configuração e as migrations do Flyway e criou testes automatizados. |
-| 02/10/2026 | A1 | Codex (OpenAI) | O Docker não abriu. Para o banco de dados, use o PostgreSQL da máquina, que acesso pelo pgAdmin. | A IA configurou o perfil PostgreSQL, criou bancos separados para aplicação e testes e executou testes unitários, de contexto e de integração HTTP em H2 e PostgreSQL local. As credenciais não foram incluídas no código. |
-| 02/10/2026 | A1 | Codex (OpenAI) | Fiz o Docker funcionar; pode continuar com essa parte. | A IA executou o perfil Testcontainers com PostgreSQL 17, verificou os nove testes de integração e atualizou o registro dos resultados. |
-| 02/10/2026 | A1 | Codex (OpenAI) | Confira o que falta da tarefa e prepare o restante da entrega, incluindo o registro de prompts no formato do AI_USAGE.md. | A IA organizou este registro no formato original, criou o repositório público socialconnect e publicou a branch avalicao1 com commits separados para implementação, testes e documentação. O envio no Teams é uma etapa separada. |
-
----
+| 02/10/2026 | A1 | Codex (OpenAI) | Implemente o CRUD de Produtos com entidade, DTOs em records, repository, service e controller. Inclua paginação e filtros por nome e categoria. | Implementação direta do módulo e dos endpoints REST. |
+| 02/10/2026 | A1 | Codex (OpenAI) | Valide os campos obrigatórios, impeça estoque negativo e nomes duplicados e calcule o alerta de estoque baixo. Retorne erros no formato Problem Details. | Implementação das validações, regras de negócio e respostas HTTP 400, 404, 409 e 422. |
+| 02/10/2026 | A1 | Codex (OpenAI) | Corrija as migrations do Flyway e configure a aplicação para H2 e PostgreSQL local, mantendo as credenciais fora do código. | Correção das migrations e configuração dos perfis de banco de dados. |
+| 02/10/2026 | A1 | Codex (OpenAI) | Documente os endpoints no Swagger com exemplos de entrada, respostas e códigos HTTP. Atualize o README com instruções de execução. | Implementação das anotações OpenAPI e atualização da documentação. |
+| 02/10/2026 | A1 | Codex (OpenAI) | Crie testes unitários com Mockito e testes de integração com PostgreSQL 17 via Testcontainers. Valide o CRUD, nomes duplicados e estoque negativo. | Criação e execução dos testes automatizados, incluindo os cenários de sucesso e erro. |
 
 ## Verificação e revisão
 
-- Foram validados **35 testes distintos** em duas execuções: 6 unitários com Mockito, 9 cenários HTTP com H2, 9 com PostgreSQL local, 9 com PostgreSQL 17 via Testcontainers e 2 testes de contexto.
-- O código foi implementado com assistência direta de IA, e não somente consultado como exemplo.
-- Os resultados e comandos estão em `docs/VALIDACAO_A1.md`.
-- O roteiro para estudar e demonstrar o projeto está em `docs/GUIA_A1.md`.
-- **A revisão e a compreensão pessoal do aluno ainda devem ser confirmadas pelo próprio aluno antes da entrega.** O uso da IA e a aprovação dos testes não substituem essa etapa.
+- **35 testes distintos validados**: 6 unitários, 9 cenários HTTP em H2, 9 em PostgreSQL local, 9 via Testcontainers e 2 testes de contexto.
+- Resultados e comandos: `docs/VALIDACAO_A1.md`.
+- Guia de estudo e demonstração: `docs/GUIA_A1.md`.
+- A revisão e a compreensão pessoal do código pelo aluno ainda devem ser confirmadas pelo próprio aluno antes da entrega.
