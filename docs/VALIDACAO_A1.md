@@ -19,4 +19,4 @@
 
 As credenciais ficam somente nas variáveis de ambiente do processo.
 Repositório público: https://github.com/ThiagoHenriqueLeu/socialconnect
-Branch da entrega: `avalicao1`. Publicado após autorização do aluno.
+
