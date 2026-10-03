@@ -40,9 +40,3 @@
 7. Consulte o ID criado e atualize com estoqueAtual = estoqueMinimo: o alerta deve ser falso.
 8. Exclua esse ID: espere 204 sem corpo. Consulte novamente: espere 404.
 
-## Antes da entrega
-
-Execute os testes, revise cada classe e escreva com suas palavras o que compreendeu.
-O registro de IA descreve assistência recebida; não comprova compreensão do aluno.
-Os testes Testcontainers exigidos para o bônus só ficam validados quando executados
-com Docker e PostgreSQL 17. Testes locais com PostgreSQL são complementares.
