@@ -1,4 +1,3 @@
-# Guia de estudo e demonstração — Produtos
 
 ## Caminho de uma requisição
 
